@@ -48,7 +48,7 @@ function App() {
     <div className="home-container">
       <div
         className="home-gradient"
-        style={{ height: "100vh", width: "100vw" }}
+        style={{ height: "100vh" }}
       ></div>
       <div className="home-wrapper" id="#home">
         <h2>
