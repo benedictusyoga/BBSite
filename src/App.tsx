@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
   const words = ["COMFORT", "DURABILITY", "ELEGANCE"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
@@ -46,10 +45,7 @@ function App() {
 
   return (
     <div className="home-container">
-      <div
-        className="home-gradient"
-        style={{ height: "100vh" }}
-      ></div>
+      <div className="home-gradient" style={{ height: "100vh" }}></div>
       <div className="home-wrapper" id="#home">
         <h2>
           Experience <span className="typewriter-effect">{displayedText}</span>
