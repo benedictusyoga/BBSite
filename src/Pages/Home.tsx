@@ -13,6 +13,19 @@ function Home() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     let typingSpeed = 250;
@@ -43,15 +56,31 @@ function Home() {
   }, [displayedText, isDeleting, words, currentWordIndex]);
 
   return (
-    <div className="home-container" id="home">
+    <div
+      className="home-container"
+      id="home"
+      style={{
+        transform: `translateY(${scrollY * 0}px)`,
+      }}
+    >
       <div className="home-gradient" style={{ height: "100vh" }}></div>
-      <div className="home-wrapper">
+      <div
+        className="home-wrapper"
+        style={{
+          transform: `translateY(${scrollY * 0.3}px)`,
+        }}
+      >
         <h2>
           Experience <span className="typewriter-effect">{displayedText}</span>
         </h2>
         <h1>BBC</h1>
       </div>
-      <div className="btn-container">
+      <div
+        className="btn-container"
+        style={{
+          transform: `translateY(${scrollY * 0.1}px)`,
+        }}
+      >
         <a href="#product" className="product-button">
           <img src="src\assets\downArrow.svg" alt="Down Arrow" />
         </a>

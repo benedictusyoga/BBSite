@@ -4,8 +4,9 @@
 }
 
 .home-container {
+    cursor: default;
     background-image: url('../assets/homepage.gif');
-    z-index: -1;
+    z-index: -10;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,6 +17,7 @@
     width: 100%;
     color: gray;
     overflow: hidden;
+    /* position: relative; */
 }
 
 .home-gradient {
@@ -25,7 +27,7 @@
     left: 0;
     background: rgb(0, 0, 0);
     background: linear-gradient(360deg, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.1) 100%);
-    z-index: 1;
+    z-index: 0;
 }
 
 .home-wrapper {
@@ -35,7 +37,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 2;
+    z-index: 1;
+    position: relative;
 }
 
 .typewriter-effect {
@@ -85,8 +88,9 @@
     width: 100%;
     position: absolute;
     margin-top: 600px;
-    z-index: 5;
-    
+    z-index: 10;
+    pointer-events: auto;
+
 }
 
 .product-button {
