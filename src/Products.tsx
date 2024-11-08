@@ -26,6 +26,10 @@ export default function Products() {
                     <h1>BBC Premium</h1>
                     <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit optio dignissimos quo saepe, odio quam a nemo nobis amet voluptatum?</h4>
                 </div>
+                <div className='right-text'>
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit optio dignissimos quo saepe, odio quam a nemo nobis amet voluptatum?</h4>
+                </div>
+
                 <Carousel slides={slides} />
             </div>
             <img
@@ -39,6 +43,13 @@ export default function Products() {
                 style={{ transform: `rotate(180deg) translateY(-${scrollPosition * 0.3}px)` }}
             />
             <div className='carousel-centering-bottom'>
+                <div className='left-text'>
+                    <h1>BBC Standard</h1>
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit optio dignissimos quo saepe, odio quam a nemo nobis amet voluptatum?</h4>
+                </div>
+                <div className='right-text'>
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit optio dignissimos quo saepe, odio quam a nemo nobis amet voluptatum?</h4>
+                </div>
                 <Carousel slides={slides} />
             </div>
 
