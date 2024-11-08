@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    background-image: url('../assets/homepage.gif');
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    color: gray;
+    overflow: hidden;
+}
+
+.home-gradient {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.1) 100%);
+    z-index: 1;
+}
+
+.home-wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.typewriter-effect {
+    border-right: 2px solid gray;
+    animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: gray;
+    }
+}
+
+.home-wrapper h1 {
+    font-family: 'Afacad', sans-serif;
+    font-style: normal;
+    font-size: 28vw;
+    font-weight: 400;
+    letter-spacing: -2vw;
+}
+
+.home-wrapper h2 {
+    font-size: 2vw;
+    letter-spacing: 1.5vw;
+    text-align: center;
+    position: relative;
+    top: 9vw;
+    left: 2vw;
+    font-family: 'Aboreto', system-ui;
+}
+
+.home-wrapper h2 span {
+    font-size: 2.2vw;
+    font-family: 'Afacad', sans-serif;
+    font-weight: 400;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 600px;
+    z-index: 5;
+    
+}
+
+.product-button {
+    opacity: 0.1;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.product-button:hover {
+    opacity: 1;
+    transform: translateY(10%);
+}
