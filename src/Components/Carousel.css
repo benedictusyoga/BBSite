@@ -2,8 +2,8 @@
     width: 500px;
     height: 800px;
     overflow: hidden;
-    mask-image: url('/src/assets/Union.svg');
-    -webkit-mask-image: url('/src/assets/Union.svg');
+    mask-image: url('/public/Union.svg');
+    -webkit-mask-image: url('/public/Union.svg');
     mask-size: contain;
     -webkit-mask-size: contain;
     mask-position: center;

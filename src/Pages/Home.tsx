@@ -82,7 +82,7 @@ function Home() {
         }}
       >
         <a href="#product" className="product-button">
-          <img src="src\assets\downArrow.svg" alt="Down Arrow" />
+          <img src="public\downArrow.svg" alt="Down Arrow" />
         </a>
       </div>
     </div>
