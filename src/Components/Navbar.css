@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    margin-bottom: -6vh;
+    top: 0;
+    height: 6vh;
+    width: 100vw;
+}
+
+.navbar-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    width: 100%;
+    font-family: 'Afacad', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+.navbar-wrapper h1 {
+    font-weight: 200;
+    font-size: 1.5vh;
+}
+
+.navbar-image {
+    background-image: url('../assets/logo_trans.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar:hover .navbar-wrapper {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-bar {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.nav-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-menu a {
+    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    color: #d9d9d9;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.nav-menu a:hover{
+    text-decoration: underline;
+}
