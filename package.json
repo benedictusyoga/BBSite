@@ -1,5 +1,4 @@
 {
-  "homepage": "https://benedictusyoga.github.io/BBSite",
   "name": "bbsite",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +8,6 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
