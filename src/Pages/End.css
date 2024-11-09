@@ -99,9 +99,12 @@
     align-items: center;
 }
 
-.scan-img img {
-    height: 30vh;
-
+.qr-code {
+    background: url('../assets/qr-placeholder.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 40vh;
+    height: 40vh;
 }
 
 .scan-bot {
