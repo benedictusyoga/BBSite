@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./End.css";
 
 const End = () => {
@@ -21,7 +21,7 @@ const End = () => {
 
   return (
     <div className="end-page">
-      <div className="counter-container">
+      <div className="counter-container" id="counter">
         <div className="left-counter" onClick={decrementCount}></div>
         <div className="middle-counter">
           <p onClick={setDefault}>Products Left</p>
@@ -30,7 +30,7 @@ const End = () => {
         <div className="right-counter" onClick={incrementCount}></div>
       </div>
 
-      <div className="scanme-container">
+      <div className="scanme-container" id="order">
         <div className="scan-top">
           <h1>GET YOURS NOW</h1>
           <div className="scan-img">

@@ -2,7 +2,7 @@ import "./Information.css";
 
 function Information() {
   return (
-    <div className="features-container" style={{ backgroundColor: "#000000" }}>
+    <div className="features-container" style={{ backgroundColor: "#000000" }} id="information">
       <div className="feature-item">
         <div className="item-top">
           <h1>COMFORT</h1>
