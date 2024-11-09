@@ -1,0 +1,75 @@
+.carousel {
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+    mask-image: url('/src/assets/Union.svg');
+    -webkit-mask-image: url('/src/assets/Union.svg');
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+
+    transition: transform 0.5s ease;
+}
+
+.carousel-wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 100vh;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+
+    position: absolute;
+
+}
+
+.button {
+    z-index: 100;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.leftButton {
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.leftButton:hover {
+    transform: translateX(-10%);
+    /* transition: transform 0.25s ease; */
+}
+
+.rightButton {
+    transform: rotate(180deg);
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.rightButton:hover {
+    transform: rotate(180deg) translateX(-10%);
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.test {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    flex-shrink: 0;
+    width: 500px;
+}
