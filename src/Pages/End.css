@@ -20,18 +20,18 @@
     text-align: center;
 }
 
-.counter-container p{
+.counter-container p {
     position: relative;
     top: 6vw;
-    color: #fff;
+    color: #d9d9d9;
     font-family: 'Afacad', sans-serif;
     font-size: 2vw;
     font-weight: 400;
 }
 
-.counter-container h1{
+.counter-container h1 {
     text-align: center;
-    color: #fff;
+    color: #d9d9d9;
     font-family: 'Aboreto', system-ui;
     font-size: 35vw;
     font-weight: 400;
@@ -39,7 +39,10 @@
 }
 
 .scanme-container {
-    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     height: 50%;
 }
 
@@ -69,4 +72,59 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.scan-top {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.scan-top h1{
+    margin-bottom: 5vh;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-family: 'Aboreto', system-ui;
+}
+
+.scan-img{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    background-color: #d9d9d9;
+    justify-content: center;
+    align-items: center;
+}
+
+.scan-img img{
+    height: 30vh;
+    
+}
+
+.scan-bot {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.scan-bot h1 {
+    align-items: center;
+    color: #d9d9d9;
+    font-family: 'Aboreto', system-ui;
+    font-weight: 200;
+    letter-spacing: 2vw;
+    font-size: 3vh;
+}
+
+.scan-bot h1 span {
+    position: relative;
+    top: 3px;
+    font-family: 'Afacad', sans-serif;
+    font-size: 5vh;
 }

@@ -1,18 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import "./End.css";
 
 const End = () => {
+  const [count, setCount] = useState(30);
+
+  const incrementCount = () => {
+    if (count < 30) {
+      setCount(count + 1);
+    }
+  };
+  const decrementCount = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
+
+  const setDefault = () => {
+    setCount(30);
+  };
+
   return (
     <div className="end-page">
       <div className="counter-container">
-        <div className="left-counter"></div>
+        <div className="left-counter" onClick={decrementCount}></div>
         <div className="middle-counter">
-            <p>Products Left</p>
-            <h1>30</h1>
+          <p onClick={setDefault}>Products Left</p>
+          <h1>{count}</h1>
         </div>
-        <div className="right-counter"></div>
+        <div className="right-counter" onClick={incrementCount}></div>
       </div>
-      <div className="scanme-container"></div>
+
+      <div className="scanme-container">
+        <div className="scan-top">
+          <h1>GET YOURS NOW</h1>
+          <div className="scan-img">
+            <img
+              src="src\assets\qr-placeholder.svg"
+              alt="QR-Code Placeholder"
+            />
+          </div>
+        </div>
+        <div className="scan-bot">
+          <h1>
+            EXPERIENCE <span>BBC</span>
+          </h1>
+        </div>
+      </div>
     </div>
   );
 };
