@@ -20,12 +20,12 @@ export default function Products() {
     <div className="product-wrapper" id="product">
       <img
         className="elipse-gradient"
-        src="public\Ellipse 6.svg"
+        src="src\assets\Ellipse 6.png"
         style={{ transform: `translateY(${scrollPosition * 0.3}px)` }}
       />
       <img
         className="elipse-border"
-        src="public\Ellipse 5.svg"
+        src="src\assets\Ellipse 5.png"
         style={{ transform: `translateY(${scrollPosition * 0.3}px)` }}
       />
 
@@ -48,14 +48,14 @@ export default function Products() {
       </div>
       <img
         className="elipse-gradient-bottom"
-        src="public\Ellipse 6.svg"
+        src="src\assets\Ellipse 6.png"
         style={{
           transform: `rotate(180deg) translateY(-${scrollPosition * 0.3}px)`,
         }}
       />
       <img
         className="elipse-border-bottom"
-        src="public\Ellipse 5.svg"
+        src="src\assets\Ellipse 5.png"
         style={{
           transform: `rotate(180deg) translateY(-${scrollPosition * 0.3}px)`,
         }}

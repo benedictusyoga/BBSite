@@ -49,10 +49,9 @@
 .left-counter {
     height: 80%;
     width: 20vw;
-    background-image: url('/public/right.svg');
+    background-image: url('../assets/left.png');
     background-repeat: no-repeat;
     background-size: contain;
-    transform: rotate(180deg);
     background-position: center;
 }
 
@@ -68,9 +67,10 @@
 .right-counter {
     width: 20vw;
     height: 80%;
-    background-image: url('/public/right.svg');
+    background-image: url('../assets/left.png');
     background-repeat: no-repeat;
     background-size: contain;
+    transform: rotate(180deg);
     background-position: center;
 }
 

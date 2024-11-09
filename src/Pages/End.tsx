@@ -34,7 +34,10 @@ const End = () => {
         <div className="scan-top">
           <h1>GET YOURS NOW</h1>
           <div className="scan-img">
-            <img src="public\qr-placeholder.svg" alt="QR-Code Placeholder" />
+            <img
+              src="src\assets\qr-placeholder.png"
+              alt="QR-Code Placeholder"
+            />
           </div>
         </div>
         <div className="scan-bot">

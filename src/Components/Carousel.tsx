@@ -10,9 +10,9 @@ export default function Carousel({ slides }: { slides: number[] }) {
   };
   return (
     <div className="carousel-wrapper">
-      <img className="border" src="public\UnionBorder.svg" />
+      <img className="border" src="src\assets\UnionBorder.png" />
       <div className="button" onClick={prevSlide}>
-        <img className="leftButton" src="public\LeftButton.svg" />
+        <img className="leftButton" src="src\assets\LeftButton.png" />
       </div>
       <div className="carousel">
         <div
@@ -25,7 +25,7 @@ export default function Carousel({ slides }: { slides: number[] }) {
         </div>
       </div>
       <div className="button" onClick={nextSlide}>
-        <img className="rightButton" src="public\LeftButton.svg" />
+        <img className="rightButton" src="src\assets\LeftButton.png" />
       </div>
     </div>
   );
