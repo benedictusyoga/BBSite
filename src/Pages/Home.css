@@ -83,26 +83,12 @@
     font-weight: 400;
 }
 
-@media(max-width:1200px) {
-    .home-wrapper h1 {
-        font-size: 50vw;
-    }
-
-    .home-wrapper h2 {
-        font-size: 3vw;
-        top: 15vw;
-    }
-
-    .home-wrapper h2 span {
-        font-size: 4vw;
-    }
-}
 
 .product-button {
     position: absolute;
     height: 10vh;
     width: 100px;
-    margin-top: 680px;
+    margin-top: 640px;
     z-index: 10;
     pointer-events: auto;
     background: url('../assets/down-arrow.png');
@@ -117,4 +103,23 @@
 .product-button:hover {
     opacity: 1;
     transform: translateY(10%);
+}
+@media(max-width:1200px) {
+    .home-wrapper h1 {
+        font-size: 50vw;
+    }
+
+    .home-wrapper h2 {
+        font-size: 3vw;
+        top: 15vw;
+    }
+
+    .home-wrapper h2 span {
+        font-size: 4vw;
+    }
+
+    .product-button{
+        margin-top: 70vh;
+        opacity: 1;
+    }
 }
