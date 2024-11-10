@@ -4,6 +4,7 @@
 }
 
 .end-page {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -75,6 +76,12 @@
 }
 
 @media(max-width:1200px) {
+
+    .end-page{
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
     .counter-container {
         flex-direction: column;
     }
@@ -98,7 +105,7 @@
 
     .right-counter {
         position: absolute;
-        margin-left: 50vh;
+        /* margin-left: 200vh; */
         right: -180px;
         height: 100%;
         width: 25vh;
