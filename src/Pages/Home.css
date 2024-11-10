@@ -61,44 +61,65 @@
 .home-wrapper h1 {
     font-family: 'Afacad', sans-serif;
     font-style: normal;
-    font-size: 28vw;
+    font-size: 60vh;
     font-weight: 400;
     letter-spacing: -2vw;
 }
 
+
 .home-wrapper h2 {
-    font-size: 2vw;
+    font-size: 3vh;
     letter-spacing: 1.5vw;
     text-align: center;
     position: relative;
-    top: 9vw;
+    top: 18vh;
     left: 2vw;
     font-family: 'Aboreto', system-ui;
 }
 
 .home-wrapper h2 span {
-    font-size: 2.2vw;
+    font-size: 4vh;
     font-family: 'Afacad', sans-serif;
     font-weight: 400;
 }
 
-.btn-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: absolute;
-    margin-top: 600px;
-    z-index: 10;
-    pointer-events: auto;
-
-}
 
 .product-button {
+    position: absolute;
+    height: 10vh;
+    width: 100px;
+    margin-top: 640px;
+    z-index: 10;
+    pointer-events: auto;
+    background: url('../assets/down-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     opacity: 0.1;
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s cubic-bezier(0.215, 0.610, 0.355, 1);
+    justify-content: center;
 }
 
 .product-button:hover {
     opacity: 1;
     transform: translateY(10%);
+}
+@media(max-width:1200px) {
+    .home-wrapper h1 {
+        font-size: 50vw;
+    }
+
+    .home-wrapper h2 {
+        font-size: 3vw;
+        top: 15vw;
+    }
+
+    .home-wrapper h2 span {
+        font-size: 4vw;
+    }
+
+    .product-button{
+        margin-top: 70vh;
+        opacity: 1;
+    }
 }

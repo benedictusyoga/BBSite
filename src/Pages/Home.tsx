@@ -75,16 +75,8 @@ function Home() {
         </h2>
         <h1>BBC</h1>
       </div>
-      <div
-        className="btn-container"
-        style={{
-          transform: `translateY(${scrollY * 0.1}px)`,
-        }}
-      >
-        <a href="#product" className="product-button">
-          <img src="src\assets\downArrow.svg" alt="Down Arrow" />
-        </a>
-      </div>
+
+      <a href="#product" className="product-button"></a>
     </div>
   );
 }
