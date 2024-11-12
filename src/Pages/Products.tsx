@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import Carousel from "../Components/Carousel";
 import "./Products.css";
+import Elipse6 from "../assets/Ellipse6.svg";
+import Elipse5 from "../assets/Ellipse5.svg";
+
 export default function Products() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -20,12 +23,12 @@ export default function Products() {
     <div className="product-wrapper" id="product">
       <img
         className="elipse-gradient"
-        src="src\assets\Ellipse 6.png"
+        src={Elipse6}
         style={{ transform: `translateY(${scrollPosition * 0.3}px)` }}
       />
       <img
         className="elipse-border"
-        src="src\assets\Ellipse 5.png"
+        src={Elipse5}
         style={{ transform: `translateY(${scrollPosition * 0.3}px)` }}
       />
 
@@ -48,14 +51,14 @@ export default function Products() {
       </div>
       <img
         className="elipse-gradient-bottom"
-        src="src\assets\Ellipse 6.png"
+        src={Elipse6}
         style={{
           transform: `rotate(180deg) translateY(-${scrollPosition * 0.3}px)`,
         }}
       />
       <img
         className="elipse-border-bottom"
-        src="src\assets\Ellipse 5.png"
+        src={Elipse5}
         style={{
           transform: `rotate(180deg) translateY(-${scrollPosition * 0.3}px)`,
         }}
