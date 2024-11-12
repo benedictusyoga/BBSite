@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./Carousel.css";
+import UnionBorder from "../assets/UnionBorder.svg";
+import LeftButton from "../assets/LeftButton.svg";
+
 export default function Carousel({ slides }: { slides: number[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const nextSlide = () => {
@@ -10,9 +13,9 @@ export default function Carousel({ slides }: { slides: number[] }) {
   };
   return (
     <div className="carousel-wrapper">
-      <img className="border" src="src\assets\UnionBorder.png" />
+      <img className="border" src={UnionBorder} />
       <div className="button" onClick={prevSlide}>
-        <img className="leftButton" src="src\assets\LeftButton.png" />
+        <img className="leftButton" src={LeftButton} />
       </div>
       <div className="carousel">
         <div
@@ -20,12 +23,12 @@ export default function Carousel({ slides }: { slides: number[] }) {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {slides.map((i) => (
-            <div className="test">{i}</div>
+            <div className="test">{i} ass</div>
           ))}
         </div>
       </div>
       <div className="button" onClick={nextSlide}>
-        <img className="rightButton" src="src\assets\LeftButton.png" />
+        <img className="rightButton" src={LeftButton} />
       </div>
     </div>
   );
