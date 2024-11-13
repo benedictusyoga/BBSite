@@ -18,7 +18,7 @@ export default function Products() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const slides = [1, 2, 3, 4, 5];
+  const slides = ["src/assets/rubyS.png","src/assets/rubyS.png" ];
   return (
     <div className="product-wrapper" id="product">
       <img
@@ -32,22 +32,15 @@ export default function Products() {
         style={{ transform: `translateY(${scrollPosition * 0.3}px)` }}
       />
 
-      <div className="carousel-centering-top">
-        <div className="left-text">
-          <h1>BBC Premium</h1>
-          <h4>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-            optio dignissimos quo saepe, odio quam a nemo nobis amet voluptatum?
-          </h4>
-        </div>
-        <div className="right-text">
-          <h4>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-            optio dignissimos quo saepe, odio quam a nemo nobis amet voluptatum?
-          </h4>
-        </div>
-
+      <div className="carousel-centering">
         <Carousel slides={slides} />
+        <div className="small-text">
+          <div className="left-wrapper">
+            <h1 className="large-text">BBC Premium</h1>
+            <h4 className="left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, blanditiis aperiam nulla quas quibusdam dolores deleniti.</h4>
+          </div>
+          <h4 className="right-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquam delectus excepturi fugit cupiditate quod consequuntur.</h4>
+        </div>
       </div>
       <img
         className="elipse-gradient-bottom"
@@ -63,21 +56,16 @@ export default function Products() {
           transform: `rotate(180deg) translateY(-${scrollPosition * 0.3}px)`,
         }}
       />
-      <div className="carousel-centering-bottom">
-        <div className="left-text">
-          <h1>BBC Standard</h1>
-          <h4>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-            optio dignissimos quo saepe, odio quam a nemo nobis amet voluptatum?
-          </h4>
-        </div>
-        <div className="right-text">
-          <h4>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-            optio dignissimos quo saepe, odio quam a nemo nobis amet voluptatum?
-          </h4>
-        </div>
+      <div className="carousel-centering">
+
         <Carousel slides={slides} />
+        <div className="small-text">
+          <div className="left-wrapper">
+            <h1 className="large-text">BBC</h1>
+            <h4 className="left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, blanditiis aperiam nulla quas quibusdam dolores deleniti.</h4>
+          </div>
+          <h4 className="right-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquam delectus excepturi fugit cupiditate quod consequuntur.</h4>
+        </div>
       </div>
     </div>
   );

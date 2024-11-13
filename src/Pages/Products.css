@@ -1,7 +1,6 @@
 .product-wrapper {
     position: relative;
     width: 100%;
-    height: 200vh;
     background-color: black;
     overflow-y: scroll;
     overflow: hidden;
@@ -15,6 +14,11 @@
     position: absolute;
 }
 
+.left-wrapper {
+
+    width: 20%;
+}
+
 .elipse-border {
     top: -65%;
     height: 170vh;
@@ -22,17 +26,46 @@
     position: absolute;
 }
 
-.carousel-centering-top {
+.large-text {
+    font-family: 'Montserrat';
+    color: white;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: right;
+    width: 20%;
+    top: -50px;
 }
 
-.carousel-centering-bottom {
+.small-text {
+    font-family: 'Montserrat';
+    bottom: 15%;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50%;
+    font-weight: 200;
+    color: white;
+    gap: 500px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.small-text h4 {
+    font-weight: lighter;
+}
+
+.left-text {
+    text-align: right;
+}
+
+.right-text {
+    width: 20%;
+}
+
+.carousel-centering {
+    position: relative;
+    flex-direction: column;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .elipse-gradient-bottom {
@@ -40,7 +73,6 @@
     width: 100%;
     transform: rotate(180deg);
     height: 170vh;
-
     position: absolute;
 }
 
@@ -52,39 +84,27 @@
     position: absolute;
 }
 
-.left-text {
 
-    font-family: 'Montserrat';
-    text-align: right;
-    width: 35%;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-220%, -50%);
-    color: white;
-    position: absolute;
+@media screen and (max-width: 1190px) {
+    .small-text{
+        position: relative;
+        gap: 20px;
+    }
+    .left-wrapper{
+        width: 30%;
+    }
+    .large-text{
+        width: max-content;
+        left: 50%;position: absolute;
+        transform: translate(-50%);
+    }
+    .right-text{
+        width: 30%;
+    }
+
 }
-
-.left-text h1 {
-    margin-bottom: 15px;
-}
-
-.left-text h4 {
-    font-weight: lighter;
-
-}
-
-.right-text {
-    font-family: 'Montserrat';
-    text-align: left;
-    width: 35%;
-    right: 50%;
-    bottom: 0;
-    transform: translate(220%, -50%);
-    color: white;
-    position: absolute;
-}
-
-.right-text h4 {
-    font-weight: lighter;
-    margin-bottom: 15px;
+@media screen and (max-width: 600px) {
+    .small-text{
+        position: relative;
+    }
 }
