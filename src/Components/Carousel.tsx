@@ -3,7 +3,7 @@ import "./Carousel.css";
 import UnionBorder from "../assets/UnionBorder.svg";
 import LeftButton from "../assets/LeftButton.svg";
 
-export default function Carousel({ slides }: { slides: number[] }) {
+export default function Carousel({ slides }: { slides: string[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const nextSlide = () => {
     setCurrentIndex((i) => (i == slides.length - 1 ? 0 : i + 1));
@@ -23,7 +23,10 @@ export default function Carousel({ slides }: { slides: number[] }) {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {slides.map((i) => (
-            <div className="test">{i} ass</div>
+
+            <div className="test">
+              <img src={i} />
+            </div>
           ))}
         </div>
       </div>

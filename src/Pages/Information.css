@@ -39,6 +39,32 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out;
+    transition-delay: 1s;
+}
+
+.feature-item-b {
+    width: 40vh;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.feature-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.feature-item-b.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .item-top {

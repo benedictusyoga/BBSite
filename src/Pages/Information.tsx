@@ -1,9 +1,28 @@
+import { useEffect, useRef, useState } from "react";
 import "./Information.css";
 
 function Information() {
+  const [isVisible, setVisible] = useState(true);
+  const domRef = useRef(null);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    });
+  
+    if (domRef.current) {
+      observer.observe(domRef.current);
+    }
+  
+    return () => {
+      if (domRef.current) {
+        observer.unobserve(domRef.current);
+      }
+    };
+  }, []);
   return (
-    <div className="features-container" style={{ backgroundColor: "#000000" }} id="information">
-      <div className="feature-item">
+    <div ref={domRef} className={`features-container`} style={{ backgroundColor: "#000000" }} id="information">
+      <div className={`feature-item  ${isVisible ? 'is-visible' : ''}`}>
         <div className="item-top">
           <h1>COMFORT</h1>
           <p>
@@ -14,7 +33,7 @@ function Information() {
         <div className="item-bottom"></div>
       </div>
 
-      <div className="feature-item">
+      <div  className={`feature-item-b  ${isVisible ? 'is-visible' : ''}`}>
         <div className="item-bottom2"></div>
         <div className="item-top2">
           <h1>DURABILITY</h1>
@@ -25,7 +44,7 @@ function Information() {
         </div>
       </div>
 
-      <div className="feature-item">
+      <div  className={`feature-item  ${isVisible ? 'is-visible' : ''}`}>
         <div className="item-top">
           <h1>ELEGANCE</h1>
           <p>
