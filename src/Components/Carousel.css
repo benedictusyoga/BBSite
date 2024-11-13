@@ -1,16 +1,16 @@
 .carousel {
-    width: 500px;
-    height: 800px;
+    width: 30vw;
+    position: relative;
+    height: auto;
     overflow: hidden;
-    mask-image: url('/public/Union.svg');
-    -webkit-mask-image: url('/public/Union.svg');
+    mask-image: url('/src/assets/Mask.svg');
+    -webkit-mask-image: url('/src/assets/Mask.svg');
     mask-size: contain;
     -webkit-mask-size: contain;
     mask-position: center;
     -webkit-mask-position: center;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-
     transition: transform 0.5s ease;
 }
 
@@ -28,6 +28,8 @@
 .border {
 
     position: absolute;
+    width: 30vw;
+    height: 80vh;
 
 }
 
@@ -61,15 +63,19 @@
 
 .carousel-items {
     display: flex;
+    width: 30vw;
+    background-color: green;
+    height: 80vh;
     transition: transform 0.5s ease;
 }
 
 .test {
     color: red;
+    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: auto;
     flex-shrink: 0;
-    width: 500px;
+    width: 100%;
 }

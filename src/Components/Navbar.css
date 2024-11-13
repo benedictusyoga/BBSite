@@ -12,7 +12,7 @@ a {
     z-index: 3;
     justify-content: center;
     align-items: center;
-    position: sticky;
+    position: fixed;
     margin-bottom: -6vh;
     top: 0;
     height: 6vh;
