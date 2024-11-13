@@ -6,7 +6,6 @@ import Elipse5 from "../assets/Ellipse5.svg";
 
 export default function Products() {
   const [scrollPosition, setScrollPosition] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
