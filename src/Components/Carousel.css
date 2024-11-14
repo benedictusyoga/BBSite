@@ -83,8 +83,9 @@
 }
 
 .test img {
-
-    height: 90%;
+    position: relative;
+    top: 50px;
+    height: 92%;
     object-fit: contain;
 }
 
