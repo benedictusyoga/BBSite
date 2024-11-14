@@ -43,7 +43,7 @@
 }
 
 .leftButton {
-    position:relative;
+    position: relative;
     left: 50px;
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 
@@ -57,7 +57,7 @@
 
 .rightButton {
     transform: rotate(180deg);
-    position:relative;
+    position: relative;
     right: 50px;
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -72,6 +72,7 @@
     height: 650px;
     transition: transform 0.5s ease;
 }
+
 .test {
     display: flex;
     justify-content: center;
@@ -80,52 +81,82 @@
     flex-shrink: 0;
     width: 100%;
 }
-.test img{
+
+.test img {
 
     height: 90%;
     object-fit: contain;
 }
 
 @media screen and (max-width: 800px) {
+    .carousel {
+        width: 100vw;
+        height: 90vw;
+    }
 
-    .leftButton{
-        position: relative;
-        left: 130px;
+    .border {
+        width: 100vw;
+        height: 90vw;
     }
-    .rightButton{
+
+    .carousel-items {
+        width: 100vw;
+        height: 90vw;
+    }
+
+    .leftButton {
         position: relative;
-        right: 130px;
+        left: 15vh;
+        height: 11vh;
+    }
+
+    .rightButton {
+        position: relative;
+        right: 15vh;
+        height: 11vh;
     }
 }
+
 @media screen and (max-width: 600px) {
-    .leftButton{
-        width: 65px;
-        height: 65px;
-        left: 220px;
+    .leftButton {
+        position: relative;
+        left: 11vh;
+        width: 9vh;
     }
-    .rightButton{
-        width: 65px;
-        height: 65px;
-        right: 220px;
+
+    .rightButton {
+        position: relative;
+        right: 11vh;
+        width: 9vh;
     }
 }
+
 @media screen and (max-width: 420px) {
-    .carousel{
-        width: 500px;
-        height: 500px;
+    /* .carousel {
+        width: 100vw;
+        height: 90vw;
     }
-    .border{
-        width: 500px;
-        height: 500px;
+
+    .border {
+        width: 100vw;
+        height: 90vw;
     }
-    .carousel-items{
-        width: 500px;
-        height: 500px;
+
+    .carousel-items {
+        width: 100vw;
+        height: 90vw;
+    } */
+
+    .leftButton {
+        /* position: relative; */
+        /* left: 200px; */
+        left: 7.5vh;
+        width: 6vh;
     }
-    .leftButton{
-        left: 170px;
-    }
-    .rightButton{
-        right: 170px;
+
+    .rightButton {
+        /* position: relative; */
+        right: 7.5vh;
+        width: 6vh;
     }
 }
