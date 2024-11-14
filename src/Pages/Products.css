@@ -15,7 +15,9 @@
 }
 
 .left-wrapper {
-
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     width: 20%;
 }
 
@@ -29,21 +31,26 @@
 .large-text {
     font-family: 'Montserrat';
     color: white;
-    position: absolute;
+    /* position: absolute; */
     text-align: right;
-    width: 20%;
+    width: max-content;
     top: -50px;
+    font-size: 3vw;
 }
 
 .small-text {
     font-family: 'Montserrat';
-    bottom: 15%;
+    bottom: 0;
     position: absolute;
+    /* top: 80px; */
     font-weight: 200;
     color: white;
     gap: 500px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+    font-size: 1vw;
+    /* margin-bottom: -50px; */
 
 }
 
@@ -62,6 +69,7 @@
 .carousel-centering {
     position: relative;
     flex-direction: column;
+    margin-bottom: 120px;
     /* background-color: red; */
     display: flex;
     justify-content: center;
@@ -88,6 +96,9 @@
 @media screen and (max-width: 1190px) {
     .small-text{
         position: relative;
+        font-size: 15px;
+        align-items: flex-start;
+        top: 80px;
         gap: 20px;
     }
     .left-wrapper{
@@ -95,7 +106,10 @@
     }
     .large-text{
         width: max-content;
-        left: 50%;position: absolute;
+        font-size: 5vh;
+        left: 50%;
+        position: absolute;
+        /* top: -70px; */
         transform: translate(-50%);
     }
     .right-text{
@@ -106,5 +120,7 @@
 @media screen and (max-width: 600px) {
     .small-text{
         position: relative;
+        font-size: 2vw;
+        margin-bottom: 20px;
     }
 }
