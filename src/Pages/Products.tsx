@@ -3,6 +3,7 @@ import Carousel from "../Components/Carousel";
 import "./Products.css";
 import Elipse6 from "../assets/Ellipse6.svg";
 import Elipse5 from "../assets/Ellipse5.svg";
+import Ruby1 from "../assets/rubyS.png";
 
 export default function Products() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -17,7 +18,7 @@ export default function Products() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const slides = ["src/assets/rubyS.png","src/assets/rubyS.png" ];
+  const slides = [Ruby1, Ruby1 ];
   return (
     <div className="product-wrapper" id="product">
       <img
