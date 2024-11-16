@@ -34,7 +34,7 @@
     /* position: absolute; */
     text-align: right;
     width: max-content;
-    top: -50px;
+    top: -90%;
     font-size: 3vw;
 }
 
@@ -98,7 +98,7 @@
         position: relative;
         font-size: 15px;
         align-items: flex-start;
-        top: 80px;
+        top: 60px;
         gap: 20px;
     }
     .left-wrapper{
@@ -109,18 +109,21 @@
         font-size: 5vh;
         left: 50%;
         position: absolute;
-        /* top: -70px; */
+        /* top: -60%; */
         transform: translate(-50%);
     }
     .right-text{
-        width: 30%;
+        width: 40%;
     }
 
 }
 @media screen and (max-width: 600px) {
     .small-text{
         position: relative;
-        font-size: 2vw;
-        margin-bottom: 20px;
+        font-size: 2.2vw;
+        margin-bottom: 50px;
+    }
+    .large-text{
+        font-size: 8vw;
     }
 }
