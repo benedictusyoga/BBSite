@@ -18,7 +18,7 @@ export default function Products() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const slides = [Ruby1, Ruby1 ];
+  const slides = [Ruby1, Ruby1, Ruby1];
   return (
     <div className="product-wrapper" id="product">
       <img
