@@ -7,7 +7,9 @@ import Elipse5 from "../assets/Ellipse5.svg";
 import Cobalt from "../assets/Cobalt.png"
 import Copper from "../assets/Copper.png"
 import Ruby from "../assets/Ruby.png"
-
+import copperP from "../assets/copperP.png"
+import navyP from "../assets/navyP.png"
+import redP from "../assets/redP.png"
 export default function Products() {
   const [scrollPosition, setScrollPosition] = useState(0);
   useEffect(() => {
@@ -22,6 +24,8 @@ export default function Products() {
     };
   }, []);
   const slides = [Cobalt, Ruby, Copper];
+
+  const slides1 = [navyP, redP, copperP];
   return (
     <div className="product-wrapper" id="product">
       <img
@@ -61,7 +65,7 @@ export default function Products() {
       />
       <div className="carousel-centering">
 
-        <Carousel slides={slides} />
+        <Carousel slides={slides1} />
         <div className="small-text">
           <div className="left-wrapper">
             <h1 className="large-text">Classic+</h1>
