@@ -109,7 +109,7 @@
         font-size: 5vh;
         left: 50%;
         position: absolute;
-        /* top: -60%; */
+        top: -50%;
         transform: translate(-50%);
     }
     .right-text{
@@ -119,11 +119,13 @@
 }
 @media screen and (max-width: 600px) {
     .small-text{
+        padding: 0.5em;
         position: relative;
+        top: 10vw;
         font-size: 2.2vw;
         margin-bottom: 50px;
     }
     .large-text{
-        font-size: 8vw;
+        font-size: 4em;
     }
 }
